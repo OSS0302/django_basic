@@ -12,9 +12,9 @@ class PayPlan (models. Model):
     create_at = models. DateTimeField(auto_now_add=True)
 
 
-# Create your models here.
 class Users (AbstractUser):
     models. ForeignKey (PayPlan, on_delete=models.DO_NOTHING)
-class UserDetail (models.Model):
-    user = models.OneToneField(User, on_delete=models.CASCADE)
-    pay_plan = models. ForeignKey (PayPlan, on_delete=models .DO_NOTHING)
+
+# class UserDetail (models.Model):
+#     user = models.OneToneField(User, on_delete=models.CASCADE)
+#     pay_plan = models. ForeignKey (PayPlan, on_delete=models .DO_NOTHING)
